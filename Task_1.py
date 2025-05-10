@@ -262,6 +262,31 @@ def task_14():
     print(f"{rubles} rubles is equal to {dollars:.2f} dollars and {euros:.2f} euros")
 
 
+# Задание
+"""  Сравнить два списка с разным порядком"""
+
+
+def task_15():
+    fruits = [
+        {
+            'my_fruits': 'apple',
+            'other_fruits': 777
+        },
+        {
+            'my_fruits': 'banana',
+            'other_fruits': 555
+        }
+    ]
+
+    print(len(fruits))
+
+    print(fruits[1]['my_fruits'])
+# Задание
+
+
+# Проверка пуша 05.09.25
+
+
 # Отступ
 # Отступ
 # Отступ
