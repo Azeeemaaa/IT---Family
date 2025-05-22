@@ -12,6 +12,9 @@
 # Ответ:
 
 
+from curses import def_shell_mode
+
+
 def task_1():
     age = 31
     height = 1.75
@@ -283,12 +286,66 @@ def task_15():
     print(len(fruits))
 
     print(fruits[1]['my_fruits'])
-# Задание
+
+# Задание 16
 
 
-# Проверка пуша 05.09.25
+def task_16():
+    my_motobike = {
+        'brand': 'Ducatti',
+        'engine_vol': 1.2,
+        'price_info': {
+            'price': 25000,
+            'is_avialible': True
+        }
+    }
 
-# Test 2
+    print(my_motobike.get('model', 0))
+    print(my_motobike.get('brand', 0))
+    print(my_motobike.get('price_info', 0))
+
+# Задание 17
+
+
+def task_17():
+
+    my_list = [['if', 0], ['secon', True]]
+
+    my_dict = dict(my_list)
+
+    print(my_dict)
+
+
+# Задание 18
+''' 1. Создайте пустой словарь
+    2. Триждды попросите пользователя сначала
+    ввести название ключа, а потом ввести значение для 
+    этого ключа, всего должно быть 6 запросов на ввод текста
+    3. Во вреся получения данных от пользователя добавляйте
+    в словарь ключи с значениями согласно тому, что ввел пользователь
+    4. Выведите результат в терминал'''
+
+
+def task_18():
+    my_list = {}
+
+    name_1 = input("Your name: ")
+    age_1 = input("Your age: ")
+
+    my_list[name_1] = age_1
+
+    name_2 = input("Your brother name: ")
+    age_2 = input("Your brother age: ")
+
+    my_list[name_2] = age_2
+
+    name_3 = input("Your sister name: ")
+    age_3 = input("Your sister age: ")
+
+    my_list[name_3] = age_3
+
+    print(my_list)
+
 
 # Отступ
 # Отступ
@@ -299,7 +356,6 @@ def task_15():
 # Отступ
 # Отступ
 # Отступ
-
 # Это подсказал Чат GPT
 # как лучше организовать код для выбора задания
 tasks = {
@@ -307,6 +363,7 @@ tasks = {
     for name, func in globals().items()
     if callable(func) and name.startswith("task_")
 }
+
 
 # Выбор задания
 choice = input("Enter the task number: ")
